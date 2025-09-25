@@ -45,15 +45,15 @@ By completing this project, you will learn:
 
 - Navigate to the backend folder:
 
-<pre>```cd backend```</pre>
+<pre>cd backend</pre>
 
 - Install Python dependencies:
 
-<pre>```pip install -r requirements.txt```</pre>
+<pre>pip install -r requirements.txt</pre>
 
 - Run the backend server:
 
-<pre>```uvicorn app:app --reload```</pre>
+<pre>uvicorn app:app</pre>
 
 
 The API will be available at http://127.0.0.1:8000.
@@ -62,15 +62,15 @@ The API will be available at http://127.0.0.1:8000.
 
 - Navigate to the frontend folder:
 
-<pre>```cd frontend```</pre>
+<pre>cd frontend</pre>
 
 - Install Node.js dependencies:
 
-<pre>```npm install```</pre>
+<pre>npm install</pre>
 
 - Start the React app:
 
-<pre>```npm start```</pre>
+<pre>npm start</pre>
 
 
 The frontend will be available at http://localhost:3000 and will automatically fetch data from the backend.
@@ -82,8 +82,8 @@ If you have the backend configured to serve the frontend build:
 
 1. Build the frontend for production:
 
-<pre>```cd frontend
-npm run build```</pre>
+<pre>cd frontend
+npm run build</pre>
 
 
 2. Move the build folder inside the backend directory (or configure backend to serve it).

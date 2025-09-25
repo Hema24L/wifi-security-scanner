@@ -21,3 +21,15 @@ A web application that scans nearby Wi-Fi networks, visualizes signal strength t
 - **Server:** Uvicorn
 
 ---
+## Learning Outcomes
+
+By completing this project, you will learn:
+
+- How to interact with Wi-Fi hardware programmatically using Python (pywifi).
+- Creating REST APIs with FastAPI and serving static frontend files.
+- Integrating React with backend APIs for real-time data visualization.
+- Using Chart.js to render dynamic and interactive signal graphs.
+- Assessing Wi-Fi security and understanding risks of open/WEP networks.
+- Combining frontend and backend into a single deployable server.
+
+---

@@ -1,0 +1,175 @@
+:root {
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --green: #16a34a;
+  --orange: #f59e0b;
+  --red: #ef4444;
+  --table-border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 36px auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+.table th,
+.table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--table-border);
+  text-align: left;
+  font-size: 14px;
+}
+.table th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Highlight currently connected network */
+.connected-network {
+  background-color: rgba(22, 163, 74, 0.1); /* light green */
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  color: white;
+}
+.badge.safe {
+  background: var(--green);
+}
+.badge.moderate {
+  background: var(--orange);
+}
+.badge.high {
+  background: var(--red);
+}
+.badge.connected {
+  background: #2563eb; /* blue */
+  margin-right: 4px;
+}
+
+
+.legend {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.legend .item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button.secondary {
+  background: #efefef;
+  color: #111827;
+}
+.status {
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+/* Small chart */
+.small-chart {
+  width: 120px;
+  height: 60px; /* slightly taller for medium size */
+  cursor: pointer;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  margin-top: 12px;
+}
+
+/* Optional: smooth hover effect for small charts */
+.small-chart:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
